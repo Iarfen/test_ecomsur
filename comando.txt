@@ -1,0 +1,26 @@
+php bin/magento setup:install \
+--admin-firstname=Ismael \
+--admin-lastname=Correa \
+--admin-email=ismael.correa.castro@gmail.com \
+--admin-user=admin \
+--admin-password='a12345678' \
+--backend-frontname=admin \
+--db-host=localhost \
+--db-name=magento \
+--db-user=root \
+--db-password=root \
+--use-rewrites=1 \
+--language=es_CL \
+--currency=CLP \
+--use-secure-admin=1 \
+--admin-use-security-key=1 \
+--session-save=files \
+--use-sample-data
+
+magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=root --db-password=root \
+--language=en_US --currency=USD --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
+--elasticsearch-port=9200 --elasticsearch-enable-auth=1 --elasticsearch-username=elastic --elasticsearch-password=@elastic123#
+
+ php bin/magento setup:install --admin-firstname=Ismael --admin-lastname=Correa --admin-email=ismael.correa.castro@gmail.com --admin-user=admin --admin-password='a12345678' --backend-frontname=admin --db-host=localhost --db-name=magento --db-user=root --db-password=root --use-rewrites=1 --language=es_CL --currency=CLP --use-secure-admin=1 --admin-use-security-key=1 --session-save=files --use-sample-data --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200 --elasticsearch-enable-auth=1 --elasticsearch-username=root --elasticsearch-password=root
